@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UAJo+QgXfke7RDihDllGgqBnempJzYpn7BZ6HU3nW4fIvlZL4IhqPeEpvNJxunhwDFxgezUWiyUWzISvQ1m7ag==",
+  "dgSpecHash": "19pPAh+F7JJL+dBFXrGix5yNFVLqbAN1VCQX8RcQqMlycpTytkWv4mxJUQf6KK/DFXGBhGwfgOa8wTR0kI0hHg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alber\\Documents\\Universidad\\Distributed Computer System\\Laboratory\\Exercise2\\gRPCclient\\gRPCclient\\gRPCclient.csproj",
+  "projectFilePath": "C:\\Users\\alber\\Documents\\Universidad\\DistributedComputerSystem\\Laboratory\\Exercise2\\gRPCclient\\gRPCclient\\gRPCclient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alber\\.nuget\\packages\\google.protobuf\\3.20.0\\google.protobuf.3.20.0.nupkg.sha512",
     "C:\\Users\\alber\\.nuget\\packages\\grpc.aspnetcore\\2.44.0\\grpc.aspnetcore.2.44.0.nupkg.sha512",

@@ -4,3 +4,9 @@ C:\Users\alber\Documents\Universidad\Distributed Computer System\Laboratory\Exer
 C:\Users\alber\Documents\Universidad\Distributed Computer System\Laboratory\Exercise2\gRPCclient\gRPCclient\obj\Debug\netcoreapp3.1\gRPCclient.AssemblyInfo.cs
 C:\Users\alber\Documents\Universidad\Distributed Computer System\Laboratory\Exercise2\gRPCclient\gRPCclient\obj\Debug\netcoreapp3.1\gRPCclient.csproj.CoreCompileInputs.cache
 C:\Users\alber\Documents\Universidad\Distributed Computer System\Laboratory\Exercise2\gRPCclient\gRPCclient\obj\Debug\netcoreapp3.1\gRPCclient.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\alber\Documents\Universidad\DistributedComputerSystem\Laboratory\Exercise2\gRPCclient\gRPCclient\obj\Debug\netcoreapp3.1\gRPCclient.csproj.AssemblyReference.cache
+C:\Users\alber\Documents\Universidad\DistributedComputerSystem\Laboratory\Exercise2\gRPCclient\gRPCclient\obj\Debug\netcoreapp3.1\gRPCclient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alber\Documents\Universidad\DistributedComputerSystem\Laboratory\Exercise2\gRPCclient\gRPCclient\obj\Debug\netcoreapp3.1\gRPCclient.AssemblyInfoInputs.cache
+C:\Users\alber\Documents\Universidad\DistributedComputerSystem\Laboratory\Exercise2\gRPCclient\gRPCclient\obj\Debug\netcoreapp3.1\gRPCclient.AssemblyInfo.cs
+C:\Users\alber\Documents\Universidad\DistributedComputerSystem\Laboratory\Exercise2\gRPCclient\gRPCclient\obj\Debug\netcoreapp3.1\gRPCclient.csproj.CoreCompileInputs.cache
+C:\Users\alber\Documents\Universidad\DistributedComputerSystem\Laboratory\Exercise2\gRPCclient\gRPCclient\obj\Debug\netcoreapp3.1\gRPCclient.MvcApplicationPartsAssemblyInfo.cache

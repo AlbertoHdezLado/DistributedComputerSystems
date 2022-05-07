@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alber\\Documents\\Universidad\\Distributed Computer System\\Laboratory\\Exercise2\\gRPCserver\\gRPCserver\\gRPCserver.csproj": {}
+    "C:\\Users\\alber\\Documents\\Universidad\\DistributedComputerSystem\\Laboratory\\Exercise2\\gRPCserver\\gRPCserver\\gRPCserver.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alber\\Documents\\Universidad\\Distributed Computer System\\Laboratory\\Exercise2\\gRPCserver\\gRPCserver\\gRPCserver.csproj": {
+    "C:\\Users\\alber\\Documents\\Universidad\\DistributedComputerSystem\\Laboratory\\Exercise2\\gRPCserver\\gRPCserver\\gRPCserver.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alber\\Documents\\Universidad\\Distributed Computer System\\Laboratory\\Exercise2\\gRPCserver\\gRPCserver\\gRPCserver.csproj",
+        "projectUniqueName": "C:\\Users\\alber\\Documents\\Universidad\\DistributedComputerSystem\\Laboratory\\Exercise2\\gRPCserver\\gRPCserver\\gRPCserver.csproj",
         "projectName": "gRPCserver",
-        "projectPath": "C:\\Users\\alber\\Documents\\Universidad\\Distributed Computer System\\Laboratory\\Exercise2\\gRPCserver\\gRPCserver\\gRPCserver.csproj",
+        "projectPath": "C:\\Users\\alber\\Documents\\Universidad\\DistributedComputerSystem\\Laboratory\\Exercise2\\gRPCserver\\gRPCserver\\gRPCserver.csproj",
         "packagesPath": "C:\\Users\\alber\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alber\\Documents\\Universidad\\Distributed Computer System\\Laboratory\\Exercise2\\gRPCserver\\gRPCserver\\obj\\",
+        "outputPath": "C:\\Users\\alber\\Documents\\Universidad\\DistributedComputerSystem\\Laboratory\\Exercise2\\gRPCserver\\gRPCserver\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alber\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -24,15 +24,16 @@ namespace gRPCclient {
     static GreetReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChJQcm90b3MvZ3JlZXQucHJvdG8SBWdyZWV0IhwKDEhlbGxvUmVxdWVzdBIM",
-            "CgRuYW1lGAEgASgJIh0KCkhlbGxvUmVwbHkSDwoHbWVzc2FnZRgBIAEoCTI9",
-            "CgdHcmVldGVyEjIKCFNheUhlbGxvEhMuZ3JlZXQuSGVsbG9SZXF1ZXN0GhEu",
-            "Z3JlZXQuSGVsbG9SZXBseUINqgIKZ1JQQ2NsaWVudGIGcHJvdG8z"));
+            "ChJQcm90b3MvZ3JlZXQucHJvdG8SBm15Z3JwYyIoCgtHcnBjUmVxdWVzdBIM",
+            "CgRuYW1lGAEgASgJEgsKA2FnZRgCIAEoBSItCgxHcnBjUmVzcG9uc2USDwoH",
+            "bWVzc2FnZRgBIAEoCRIMCgRkYXlzGAIgASgFMkQKC0dycGNTZXJ2aWNlEjUK",
+            "CEdycGNQcm9jEhMubXlncnBjLkdycGNSZXF1ZXN0GhQubXlncnBjLkdycGNS",
+            "ZXNwb25zZUINqgIKZ1JQQ2NsaWVudGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::gRPCclient.HelloRequest), global::gRPCclient.HelloRequest.Parser, new[]{ "Name" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::gRPCclient.HelloReply), global::gRPCclient.HelloReply.Parser, new[]{ "Message" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::gRPCclient.GrpcRequest), global::gRPCclient.GrpcRequest.Parser, new[]{ "Name", "Age" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::gRPCclient.GrpcResponse), global::gRPCclient.GrpcResponse.Parser, new[]{ "Message", "Days" }, null, null, null, null)
           }));
     }
     #endregion
@@ -40,18 +41,18 @@ namespace gRPCclient {
   }
   #region Messages
   /// <summary>
-  /// The request message containing the user's name.
+  /// The request message
   /// </summary>
-  public sealed partial class HelloRequest : pb::IMessage<HelloRequest>
+  public sealed partial class GrpcRequest : pb::IMessage<GrpcRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<HelloRequest> _parser = new pb::MessageParser<HelloRequest>(() => new HelloRequest());
+    private static readonly pb::MessageParser<GrpcRequest> _parser = new pb::MessageParser<GrpcRequest>(() => new GrpcRequest());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<HelloRequest> Parser { get { return _parser; } }
+    public static pb::MessageParser<GrpcRequest> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -67,7 +68,7 @@ namespace gRPCclient {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public HelloRequest() {
+    public GrpcRequest() {
       OnConstruction();
     }
 
@@ -75,15 +76,16 @@ namespace gRPCclient {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public HelloRequest(HelloRequest other) : this() {
+    public GrpcRequest(GrpcRequest other) : this() {
       name_ = other.name_;
+      age_ = other.age_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public HelloRequest Clone() {
-      return new HelloRequest(this);
+    public GrpcRequest Clone() {
+      return new GrpcRequest(this);
     }
 
     /// <summary>Field number for the "name" field.</summary>
@@ -98,15 +100,27 @@ namespace gRPCclient {
       }
     }
 
+    /// <summary>Field number for the "age" field.</summary>
+    public const int AgeFieldNumber = 2;
+    private int age_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as HelloRequest);
+    public int Age {
+      get { return age_; }
+      set {
+        age_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(HelloRequest other) {
+    public override bool Equals(object other) {
+      return Equals(other as GrpcRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GrpcRequest other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -114,6 +128,7 @@ namespace gRPCclient {
         return true;
       }
       if (Name != other.Name) return false;
+      if (Age != other.Age) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -122,6 +137,7 @@ namespace gRPCclient {
     public override int GetHashCode() {
       int hash = 1;
       if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Age != 0) hash ^= Age.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -144,6 +160,10 @@ namespace gRPCclient {
         output.WriteRawTag(10);
         output.WriteString(Name);
       }
+      if (Age != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Age);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -158,6 +178,10 @@ namespace gRPCclient {
         output.WriteRawTag(10);
         output.WriteString(Name);
       }
+      if (Age != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Age);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -171,6 +195,9 @@ namespace gRPCclient {
       if (Name.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
+      if (Age != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Age);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -179,12 +206,15 @@ namespace gRPCclient {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(HelloRequest other) {
+    public void MergeFrom(GrpcRequest other) {
       if (other == null) {
         return;
       }
       if (other.Name.Length != 0) {
         Name = other.Name;
+      }
+      if (other.Age != 0) {
+        Age = other.Age;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -203,6 +233,10 @@ namespace gRPCclient {
             break;
           case 10: {
             Name = input.ReadString();
+            break;
+          }
+          case 16: {
+            Age = input.ReadInt32();
             break;
           }
         }
@@ -224,6 +258,10 @@ namespace gRPCclient {
             Name = input.ReadString();
             break;
           }
+          case 16: {
+            Age = input.ReadInt32();
+            break;
+          }
         }
       }
     }
@@ -232,18 +270,18 @@ namespace gRPCclient {
   }
 
   /// <summary>
-  /// The response message containing the greetings.
+  /// The response message
   /// </summary>
-  public sealed partial class HelloReply : pb::IMessage<HelloReply>
+  public sealed partial class GrpcResponse : pb::IMessage<GrpcResponse>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
   #endif
   {
-    private static readonly pb::MessageParser<HelloReply> _parser = new pb::MessageParser<HelloReply>(() => new HelloReply());
+    private static readonly pb::MessageParser<GrpcResponse> _parser = new pb::MessageParser<GrpcResponse>(() => new GrpcResponse());
     private pb::UnknownFieldSet _unknownFields;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<HelloReply> Parser { get { return _parser; } }
+    public static pb::MessageParser<GrpcResponse> Parser { get { return _parser; } }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -259,7 +297,7 @@ namespace gRPCclient {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public HelloReply() {
+    public GrpcResponse() {
       OnConstruction();
     }
 
@@ -267,15 +305,16 @@ namespace gRPCclient {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public HelloReply(HelloReply other) : this() {
+    public GrpcResponse(GrpcResponse other) : this() {
       message_ = other.message_;
+      days_ = other.days_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public HelloReply Clone() {
-      return new HelloReply(this);
+    public GrpcResponse Clone() {
+      return new GrpcResponse(this);
     }
 
     /// <summary>Field number for the "message" field.</summary>
@@ -290,15 +329,27 @@ namespace gRPCclient {
       }
     }
 
+    /// <summary>Field number for the "days" field.</summary>
+    public const int DaysFieldNumber = 2;
+    private int days_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as HelloReply);
+    public int Days {
+      get { return days_; }
+      set {
+        days_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(HelloReply other) {
+    public override bool Equals(object other) {
+      return Equals(other as GrpcResponse);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(GrpcResponse other) {
       if (ReferenceEquals(other, null)) {
         return false;
       }
@@ -306,6 +357,7 @@ namespace gRPCclient {
         return true;
       }
       if (Message != other.Message) return false;
+      if (Days != other.Days) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -314,6 +366,7 @@ namespace gRPCclient {
     public override int GetHashCode() {
       int hash = 1;
       if (Message.Length != 0) hash ^= Message.GetHashCode();
+      if (Days != 0) hash ^= Days.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -336,6 +389,10 @@ namespace gRPCclient {
         output.WriteRawTag(10);
         output.WriteString(Message);
       }
+      if (Days != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Days);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -350,6 +407,10 @@ namespace gRPCclient {
         output.WriteRawTag(10);
         output.WriteString(Message);
       }
+      if (Days != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(Days);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -363,6 +424,9 @@ namespace gRPCclient {
       if (Message.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Message);
       }
+      if (Days != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Days);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -371,12 +435,15 @@ namespace gRPCclient {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(HelloReply other) {
+    public void MergeFrom(GrpcResponse other) {
       if (other == null) {
         return;
       }
       if (other.Message.Length != 0) {
         Message = other.Message;
+      }
+      if (other.Days != 0) {
+        Days = other.Days;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -397,6 +464,10 @@ namespace gRPCclient {
             Message = input.ReadString();
             break;
           }
+          case 16: {
+            Days = input.ReadInt32();
+            break;
+          }
         }
       }
     #endif
@@ -414,6 +485,10 @@ namespace gRPCclient {
             break;
           case 10: {
             Message = input.ReadString();
+            break;
+          }
+          case 16: {
+            Days = input.ReadInt32();
             break;
           }
         }

@@ -735,11 +735,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alber\\Documents\\Universidad\\Distributed Computer System\\Laboratory\\Exercise2\\gRPCclient\\gRPCclient\\gRPCclient.csproj",
+      "projectUniqueName": "C:\\Users\\alber\\Documents\\Universidad\\DistributedComputerSystem\\Laboratory\\Exercise2\\gRPCclient\\gRPCclient\\gRPCclient.csproj",
       "projectName": "gRPCclient",
-      "projectPath": "C:\\Users\\alber\\Documents\\Universidad\\Distributed Computer System\\Laboratory\\Exercise2\\gRPCclient\\gRPCclient\\gRPCclient.csproj",
+      "projectPath": "C:\\Users\\alber\\Documents\\Universidad\\DistributedComputerSystem\\Laboratory\\Exercise2\\gRPCclient\\gRPCclient\\gRPCclient.csproj",
       "packagesPath": "C:\\Users\\alber\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alber\\Documents\\Universidad\\Distributed Computer System\\Laboratory\\Exercise2\\gRPCclient\\gRPCclient\\obj\\",
+      "outputPath": "C:\\Users\\alber\\Documents\\Universidad\\DistributedComputerSystem\\Laboratory\\Exercise2\\gRPCclient\\gRPCclient\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alber\\AppData\\Roaming\\NuGet\\NuGet.Config",

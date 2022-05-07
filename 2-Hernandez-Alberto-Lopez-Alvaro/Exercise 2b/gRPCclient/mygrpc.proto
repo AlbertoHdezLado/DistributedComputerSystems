@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRPCclient";
+
+package mygrpc;
+
+// The greeting service definition.
+service GrpcService {
+  // Sends a greeting
+  rpc GrpcProc (GrpcRequest) returns (GrpcResponse) {}
+}
+
+// The request message containing the user's name.
+message GrpcRequest {
+  string name = 1;
+  int32 age = 2;
+}
+
+// The response message containing the greetings.
+message GrpcResponse {
+  string message = 1;
+  int32 days = 2;
+}
